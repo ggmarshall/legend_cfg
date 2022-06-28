@@ -1,0 +1,43 @@
+{
+    "outputs": [
+      "bl_mean","bl_std", "bl_slope","bl_intercept","tail_slope","tail_std", "wf_blsub"
+
+
+    ],
+
+    "processors":{
+
+        "wf_blsub":{
+            "function": "bl_subtract",
+            "module": "pygama.dsp.processors",
+            "args": ["waveform", "baseline", "wf_blsub"],
+            "prereqs": ["waveform", "baseline"],
+            "unit": "ADC"
+         },
+
+	"bl_mean , bl_std, bl_slope, bl_intercept":{
+            "function": "linear_slope_fit",
+            "module": "pygama.dsp.processors",
+            "args" : ["wf_blsub[0: 1650]", "bl_mean","bl_std", "bl_slope","bl_intercept"],
+            "prereqs": ["wf_blsub"],
+            "unit": ["ADC","ADC","ADC","ADC"]
+          },
+
+
+          "wf_logged":{
+            "function": "log_check",
+            "module": "pygama.dsp.processors",
+            "args": ["wf_blsub[2250:]", "wf_logged"],
+            "prereqs": ["wf_blsub"],
+            "unit": "ADC"
+         },
+
+	"tail_mean , tail_std, tail_slope, tail_intercept":{
+           "function": "linear_slope_fit",
+           "module": "pygama.dsp.processors",
+           "args" : ["wf_logged", "tail_mean","tail_std", "tail_slope","tail_intercept"],
+           "prereqs": ["wf_logged"],
+           "unit": ["ADC","ADC","ADC","ADC"]
+        }
+       }
+    }

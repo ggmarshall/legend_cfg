@@ -1,0 +1,112 @@
+{   
+
+    "snakemake_rules":{
+        
+        "pars_dsp_tau":{
+            "inputs":{
+                "processing_chain":{
+                    "001": "$_/pars_dsp_tau/dsp_proc_chain_minimal_ICPC.json",
+                    "002": "$_/pars_dsp_tau/dsp_proc_chain_minimal_ICPC.json",
+                    "003": "$_/pars_dsp_tau/dsp_proc_chain_minimal_ICPC.json",
+                    "004": "$_/pars_dsp_tau/dsp_proc_chain_minimal_PPC.json",
+                    "005": "$_/pars_dsp_tau/dsp_proc_chain_minimal_PPC.json",
+                    "006": "$_/pars_dsp_tau/dsp_proc_chain_minimal_BEGe.json",
+                    "007": "$_/pars_dsp_tau/dsp_proc_chain_minimal_COAX.json"
+                }
+            },
+            "options":{
+                "verbosity":3
+            }
+        },
+
+        "pars_dsp_egrid":{
+            "inputs":{
+                "processing_chain":{
+                    "001": "$_/tier_dsp/dsp_proc_chain_ICPC.json",
+                    "002": "$_/tier_dsp/dsp_proc_chain_ICPC.json",
+                    "003": "$_/tier_dsp/dsp_proc_chain_ICPC.json",
+                    "004": "$_/tier_dsp/dsp_proc_chain_PPC.json",
+                    "005": "$_/tier_dsp/dsp_proc_chain_PPC.json",
+                    "006": "$_/tier_dsp/dsp_proc_chain_BEGe.json",
+                    "007": "$_/tier_dsp/dsp_proc_chain_COAX.json"
+                },
+                "optimiser_config":{
+                    "001": "$_/pars_dsp_egrid/dsp_optimiser_ICPC.json",
+                    "002": "$_/pars_dsp_egrid/dsp_optimiser_ICPC.json",
+                    "003": "$_/pars_dsp_egrid/dsp_optimiser_ICPC.json",
+                    "004": "$_/pars_dsp_egrid/dsp_optimiser_PPC.json",
+                    "005": "$_/pars_dsp_egrid/dsp_optimiser_PPC.json",
+                    "006": "$_/pars_dsp_egrid/dsp_optimiser_BEGe.json",
+                    "007": "$_/pars_dsp_egrid/dsp_optimiser_COAX.json"
+                }
+            },
+            "options":{
+                "verbosity":3
+            }
+        },
+
+        "pars_dsp_eopt":{
+            "inputs":{
+                "processing_chain":{
+                    "001": "$_/tier_dsp/dsp_proc_chain_ICPC.json",
+                    "002": "$_/tier_dsp/dsp_proc_chain_ICPC.json",
+                    "003": "$_/tier_dsp/dsp_proc_chain_ICPC.json",
+                    "004": "$_/tier_dsp/dsp_proc_chain_PPC.json",
+                    "005": "$_/tier_dsp/dsp_proc_chain_PPC.json",
+                    "006": "$_/tier_dsp/dsp_proc_chain_BEGe.json",
+                    "007": "$_/tier_dsp/dsp_proc_chain_COAX.json"
+                },
+                "optimiser_config":{
+                    "001": "$_/pars_dsp_egrid/dsp_optimiser_ICPC.json",
+                    "002": "$_/pars_dsp_egrid/dsp_optimiser_ICPC.json",
+                    "003": "$_/pars_dsp_egrid/dsp_optimiser_ICPC.json",
+                    "004": "$_/pars_dsp_egrid/dsp_optimiser_PPC.json",
+                    "005": "$_/pars_dsp_egrid/dsp_optimiser_PPC.json",
+                    "006": "$_/pars_dsp_egrid/dsp_optimiser_BEGe.json",
+                    "007": "$_/pars_dsp_egrid/dsp_optimiser_COAX.json"
+                }
+            },
+            "options":{
+                "verbosity":3
+            }
+        },
+
+        "pars_hit_ecal":{
+            "inputs":{
+                "ecal_config":{
+                    "001": "$_/pars_hit_ecal/pars_hit_ecal_config_ICPC.json",
+                    "002": "$_/pars_hit_ecal/pars_hit_ecal_config_ICPC.json",
+                    "003": "$_/pars_hit_ecal/pars_hit_ecal_config_ICPC.json",
+                    "004": "$_/pars_hit_ecal/pars_hit_ecal_config_PPC.json",
+                    "005": "$_/pars_hit_ecal/pars_hit_ecal_config_PPC.json",
+                    "006": "$_/pars_hit_ecal/pars_hit_ecal_config_BEGe.json",
+                    "007": "$_/pars_hit_ecal/pars_hit_ecal_config_COAX.json",
+                    "008": "$_/pars_hit_ecal/pars_hit_ecal_config_SiPM.json"
+                }
+                
+            },
+            "options":{
+                "verbosity":3
+            }
+        },
+
+        "pars_hit_aoecal":{
+            "inputs":{
+                "aoecal_config":{
+                    "001": "$_/pars_hit_ecal/pars_hit_aoecal_config_ICPC.json",
+                    "002": "$_/pars_hit_ecal/pars_hit_aoecal_config_ICPC.json",
+                    "003": "$_/pars_hit_ecal/pars_hit_aoecal_config_ICPC.json",
+                    "004": "$_/pars_hit_ecal/pars_hit_aoecal_config_PPC.json",
+                    "005": "$_/pars_hit_ecal/pars_hit_aoecal_config_PPC.json",
+                    "006": "$_/pars_hit_ecal/pars_hit_aoecal_config_BEGe.json",
+                    "007": "$_/pars_hit_ecal/pars_hit_aoecal_config_COAX.json",
+                    "008": "$_/pars_hit_ecal/pars_hit_aoecal_config_SiPM.json"
+                }
+            
+            },
+            "options":{
+                "verbosity":3
+            }
+        }
+    }
+}

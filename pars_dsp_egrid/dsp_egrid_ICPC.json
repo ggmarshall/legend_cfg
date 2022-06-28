@@ -1,0 +1,50 @@
+[{
+    "zac": {
+        "sigma": {
+            "start": 1.008,
+            "end": 12.48,
+            "spacing": 0.48,
+            "unit": "us"
+        },
+        "flat": {
+            "start": 1.008,
+            "end": 4.224,
+            "spacing": 0.224,
+            "unit": "us"
+        }
+    }
+},
+{
+    "etrap": {
+        "rise": {
+            "start": 1.008,
+            "end": 12.688,
+            "spacing": 0.688,
+            "unit": "us"
+        },
+        "flat": {
+            "start": 1.008,
+            "end": 4.224,
+            "spacing": 0.224,
+            "unit": "us"
+        }
+    }
+},
+{
+    "cusp": {
+        "sigma": {
+            "start": 1.008,
+            "end": 12.48,
+            "spacing": 0.48,
+            "unit": "us"
+        },
+        "flat": {
+            "start": 1.008,
+            "end": 4.224,
+            "spacing": 0.224,
+            "unit": "us"
+        }
+    }
+}
+
+]

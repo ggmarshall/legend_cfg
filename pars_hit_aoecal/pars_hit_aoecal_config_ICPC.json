@@ -1,0 +1,8 @@
+{   
+    "current_parameter":"A_max",
+    "energy_parameter":"cuspEmax",
+    "ctc_parameter":"dt_eff",
+    "ctc_energy":"True",
+    "dt_corr":"True"
+
+}
