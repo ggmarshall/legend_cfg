@@ -19,16 +19,16 @@
         "tier_dsp":{
             "inputs":{
                 "processing_chain":{
-                    "001": "$_/tier_dsp/dsp_proc_chain_ICPC.json",
-                    "002": "$_/tier_dsp/dsp_proc_chain_ICPC.json",
-                    "003": "$_/tier_dsp/dsp_proc_chain_ICPC.json",
-                    "004": "$_/tier_dsp/dsp_proc_chain_PPC.json",
-                    "005": "$_/tier_dsp/dsp_proc_chain_PPC.json",
-                    "006": "$_/tier_dsp/dsp_proc_chain_BEGe.json",
-                    "007": "$_/tier_dsp/dsp_proc_chain_COAX.json",
-                    "008": "$_/tier_dsp/dsp_proc_chain_SiPM.json",
-                    "009": "$_/tier_dsp/dsp_proc_chain_SiPM.json",
-                    "010": "$_/tier_dsp/dsp_proc_chain_SiPM.json"
+                    "001": "$_/tier_dsp/L200-p01-r%-T%-ICPC-dsp_proc_chain.json",
+                    "002": "$_/tier_dsp/L200-p01-r%-T%-ICPC-dsp_proc_chain.json",
+                    "003": "$_/tier_dsp/L200-p01-r%-T%-ICPC-dsp_proc_chain.json",
+                    "004": "$_/tier_dsp/L200-p01-r%-T%-PPC-dsp_proc_chain.json",
+                    "005": "$_/tier_dsp/L200-p01-r%-T%-PPC-dsp_proc_chain.json",
+                    "006": "$_/tier_dsp/L200-p01-r%-T%-BEGe-dsp_proc_chain.json",
+                    "007": "$_/tier_dsp/L200-p01-r%-T%-COAX-dsp_proc_chain.json",
+                    "008": "$_/tier_dsp/L200-p01-r%-T%-SiPM-dsp_proc_chain.json",
+                    "009": "$_/tier_dsp/L200-p01-r%-T%-SiPM-dsp_proc_chain.json",
+                    "010": "$_/tier_dsp/L200-p01-r%-T%-SiPM-dsp_proc_chain.json"
                 }
             },
             "options":{
@@ -101,18 +101,7 @@
 
         "tier_hit":{
             "inputs":{
-                "builder_config":{
-                    "001": "$_/tier_hit/hit_builder_ICPC.json",
-                    "002": "$_/tier_hit/hit_builder_ICPC.json",
-                    "003": "$_/tier_hit/hit_builder_ICPC.json",
-                    "004": "$_/tier_hit/hit_builder_PPC.json",
-                    "005": "$_/tier_hit/hit_builder_PPC.json",
-                    "006": "$_/tier_hit/hit_builder_BEGe.json",
-                    "007": "$_/tier_hit/hit_builder_COAX.json",
-                    "008": "$_/tier_hit/hit_builder_SiPM.json",
-                    "009": "$_/tier_hit/hit_builder_SiPM.json",
-                    "010": "$_/tier_hit/hit_builder_SiPM.json"
-                }
+                
             },
             "options":{
                 "verbosity":3

@@ -5,13 +5,13 @@
         "pars_dsp_tau":{
             "inputs":{
                 "processing_chain":{
-                    "001": "$_/pars_dsp_tau/dsp_proc_chain_minimal_ICPC.json",
-                    "002": "$_/pars_dsp_tau/dsp_proc_chain_minimal_ICPC.json",
-                    "003": "$_/pars_dsp_tau/dsp_proc_chain_minimal_ICPC.json",
-                    "004": "$_/pars_dsp_tau/dsp_proc_chain_minimal_PPC.json",
-                    "005": "$_/pars_dsp_tau/dsp_proc_chain_minimal_PPC.json",
-                    "006": "$_/pars_dsp_tau/dsp_proc_chain_minimal_BEGe.json",
-                    "007": "$_/pars_dsp_tau/dsp_proc_chain_minimal_COAX.json"
+                    "001": "$_/pars_dsp_tau/L200-p01-r%-T%-ICPC-dsp_proc_chain_minimal.json",
+                    "002": "$_/pars_dsp_tau/L200-p01-r%-T%-ICPC-dsp_proc_chain_minimal.json",
+                    "003": "$_/pars_dsp_tau/L200-p01-r%-T%-ICPC-dsp_proc_chain_minimal.json",
+                    "004": "$_/pars_dsp_tau/L200-p01-r%-T%-PPC-dsp_proc_chain_minimal.json",
+                    "005": "$_/pars_dsp_tau/L200-p01-r%-T%-PPC-dsp_proc_chain_minimal.json",
+                    "006": "$_/pars_dsp_tau/L200-p01-r%-T%-BEGe-dsp_proc_chain_minimal.json",
+                    "007": "$_/pars_dsp_tau/L200-p01-r%-T%-COAX-dsp_proc_chain_minimal.json"
                 }
             },
             "options":{
@@ -22,22 +22,22 @@
         "pars_dsp_egrid":{
             "inputs":{
                 "processing_chain":{
-                    "001": "$_/tier_dsp/dsp_proc_chain_ICPC.json",
-                    "002": "$_/tier_dsp/dsp_proc_chain_ICPC.json",
-                    "003": "$_/tier_dsp/dsp_proc_chain_ICPC.json",
-                    "004": "$_/tier_dsp/dsp_proc_chain_PPC.json",
-                    "005": "$_/tier_dsp/dsp_proc_chain_PPC.json",
-                    "006": "$_/tier_dsp/dsp_proc_chain_BEGe.json",
-                    "007": "$_/tier_dsp/dsp_proc_chain_COAX.json"
+                    "001": "$_/tier_dsp/L200-p01-r%-T%-ICPC-dsp_proc_chain.json",
+                    "002": "$_/tier_dsp/L200-p01-r%-T%-ICPC-dsp_proc_chain.json",
+                    "003": "$_/tier_dsp/L200-p01-r%-T%-ICPC-dsp_proc_chain.json",
+                    "004": "$_/tier_dsp/L200-p01-r%-T%-PPC-dsp_proc_chain.json",
+                    "005": "$_/tier_dsp/L200-p01-r%-T%-PPC-dsp_proc_chain.json",
+                    "006": "$_/tier_dsp/L200-p01-r%-T%-BEGe-dsp_proc_chain.json",
+                    "007": "$_/tier_dsp/L200-p01-r%-T%-COAX-dsp_proc_chain.json"
                 },
                 "optimiser_config":{
-                    "001": "$_/pars_dsp_egrid/dsp_optimiser_ICPC.json",
-                    "002": "$_/pars_dsp_egrid/dsp_optimiser_ICPC.json",
-                    "003": "$_/pars_dsp_egrid/dsp_optimiser_ICPC.json",
-                    "004": "$_/pars_dsp_egrid/dsp_optimiser_PPC.json",
-                    "005": "$_/pars_dsp_egrid/dsp_optimiser_PPC.json",
-                    "006": "$_/pars_dsp_egrid/dsp_optimiser_BEGe.json",
-                    "007": "$_/pars_dsp_egrid/dsp_optimiser_COAX.json"
+                    "001": "$_/pars_dsp_egrid/L200-p01-r%-T%-ICPC-dsp_egrid.json",
+                    "002": "$_/pars_dsp_egrid/L200-p01-r%-T%-ICPC-dsp_egrid.json",
+                    "003": "$_/pars_dsp_egrid/L200-p01-r%-T%-ICPC-dsp_egrid.json",
+                    "004": "$_/pars_dsp_egrid/L200-p01-r%-T%-PPC-dsp_egrid.json",
+                    "005": "$_/pars_dsp_egrid/L200-p01-r%-T%-PPC-dsp_egrid.json",
+                    "006": "$_/pars_dsp_egrid/L200-p01-r%-T%-BEGe-dsp_egrid.json",
+                    "007": "$_/pars_dsp_egrid/L200-p01-r%-T%-COAX-dsp_egrid.json"
                 }
             },
             "options":{
@@ -48,22 +48,22 @@
         "pars_dsp_eopt":{
             "inputs":{
                 "processing_chain":{
-                    "001": "$_/tier_dsp/dsp_proc_chain_ICPC.json",
-                    "002": "$_/tier_dsp/dsp_proc_chain_ICPC.json",
-                    "003": "$_/tier_dsp/dsp_proc_chain_ICPC.json",
-                    "004": "$_/tier_dsp/dsp_proc_chain_PPC.json",
-                    "005": "$_/tier_dsp/dsp_proc_chain_PPC.json",
-                    "006": "$_/tier_dsp/dsp_proc_chain_BEGe.json",
-                    "007": "$_/tier_dsp/dsp_proc_chain_COAX.json"
+                    "001": "$_/tier_dsp/L200-p01-r%-T%-ICPC-dsp_proc_chain.json",
+                    "002": "$_/tier_dsp/L200-p01-r%-T%-ICPC-dsp_proc_chain.json",
+                    "003": "$_/tier_dsp/L200-p01-r%-T%-ICPC-dsp_proc_chain.json",
+                    "004": "$_/tier_dsp/L200-p01-r%-T%-PPC-dsp_proc_chain.json",
+                    "005": "$_/tier_dsp/L200-p01-r%-T%-PPC-dsp_proc_chain.json",
+                    "006": "$_/tier_dsp/L200-p01-r%-T%-BEGe-dsp_proc_chain.json",
+                    "007": "$_/tier_dsp/L200-p01-r%-T%-COAX-dsp_proc_chain.json"
                 },
                 "optimiser_config":{
-                    "001": "$_/pars_dsp_egrid/dsp_optimiser_ICPC.json",
-                    "002": "$_/pars_dsp_egrid/dsp_optimiser_ICPC.json",
-                    "003": "$_/pars_dsp_egrid/dsp_optimiser_ICPC.json",
-                    "004": "$_/pars_dsp_egrid/dsp_optimiser_PPC.json",
-                    "005": "$_/pars_dsp_egrid/dsp_optimiser_PPC.json",
-                    "006": "$_/pars_dsp_egrid/dsp_optimiser_BEGe.json",
-                    "007": "$_/pars_dsp_egrid/dsp_optimiser_COAX.json"
+                    "001": "$_/pars_dsp_egrid/L200-p01-r%-T%-ICPC-dsp_egrid.json",
+                    "002": "$_/pars_dsp_egrid/L200-p01-r%-T%-ICPC-dsp_egrid.json",
+                    "003": "$_/pars_dsp_egrid/L200-p01-r%-T%-ICPC-dsp_egrid.json",
+                    "004": "$_/pars_dsp_egrid/L200-p01-r%-T%-PPC-dsp_egrid.json",
+                    "005": "$_/pars_dsp_egrid/L200-p01-r%-T%-PPC-dsp_egrid.json",
+                    "006": "$_/pars_dsp_egrid/L200-p01-r%-T%-BEGe-dsp_egrid.json",
+                    "007": "$_/pars_dsp_egrid/L200-p01-r%-T%-COAX-dsp_egrid.json"
                 }
             },
             "options":{

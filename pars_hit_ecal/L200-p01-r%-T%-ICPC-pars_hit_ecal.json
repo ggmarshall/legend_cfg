@@ -1,6 +1,7 @@
 {
     "energy_parameter":"cuspEmax",
     "ctc_parameter":"dt_eff",
+    "ct_corr":"True",
     "default_deg":1,
     "n_events":15000
 }
