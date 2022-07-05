@@ -1,0 +1,28 @@
+{
+    "outputs": [
+      "tp_min", "tp_max", "wf_min", "wf_max", "bl_mean","bl_std"
+    ],
+    "processors":{
+  
+      "tp_min, tp_max, wf_min, wf_max":{
+        "function": "min_max",
+        "module": "pygama.dsp.processors",
+        "args": ["waveform", "tp_min", "tp_max", "wf_min", "wf_max"],
+        "unit": ["ns","ns","ADC", "ADC"]
+        },
+  
+      "wf_blsub":{
+        "function": "bl_subtract",
+        "module": "pygama.dsp.processors",
+        "args": ["waveform", "baseline", "wf_blsub"],
+        "unit": "ADC"
+        },
+
+        "bl_mean , bl_std, bl_slope, bl_intercept":{
+          "function": "linear_slope_fit",
+          "module": "pygama.dsp.processors",
+          "args" : ["wf_blsub[0: 750]", "bl_mean","bl_std", "bl_slope","bl_intercept"],
+          "unit": ["ADC","ADC","ADC","ADC"]
+          }
+  }
+  }

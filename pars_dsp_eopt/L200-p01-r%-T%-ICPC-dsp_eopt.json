@@ -1,24 +1,6 @@
 [
     {
-        "etrap": {
-            "sample": {
-                "start": 0.5,
-                "end": 1.05,
-                "spacing": 0.05
-            }
-        }
-    },
-    {
         "cusp": {
-            "sample": {
-                "start": 0,
-                "end": 110,
-                "spacing": 10
-            }
-        }
-    },
-    {
-        "zac": {
             "sample": {
                 "start": 0,
                 "end": 110,

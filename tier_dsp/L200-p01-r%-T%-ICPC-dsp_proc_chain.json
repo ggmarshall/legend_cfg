@@ -1,7 +1,7 @@
 {
   "outputs": [
     "tp_min", "tp_max", "wf_min", "wf_max", "bl_mean","bl_std", "bl_slope","bl_intercept", "pz_slope","pz_std", "pz_mean",
-    "trapTmax", "tp_0_est","tp_10","tp_20","tp_50","tp_80","tp_90",
+    "trapTmax", "tp_0_est", "tp_0_atrap","tp_10","tp_20","tp_50","tp_80","tp_90",
     "tp_99", "tp_100", "tp_01", "tp_95", "A_max", "QDrift", "dt_eff", "tp_aoe_max", "tp_aoe_samp",
     "trapEmax", "trapEftp", "cuspEmax","zacEmax",  "zacEftp", "cuspEftp"
   ],
@@ -43,7 +43,13 @@
       "unit": ["ADC","ADC","ADC","ADC"]
       },
 
-
+      "wf_t0_filter": {
+        "function": "t0_filter",
+        "module": "pygama.dsp.processors",
+        "args": [ "wf_pz", "wf_t0_filter(len(wf_pz), 'f', grid=wf_pz.grid)" ],
+        "init_args" : ["128*ns/wf_pz.period", "2*us/wf_pz.period"],
+        "unit": "ADC"
+        },
 
     "wf_atrap": {
       "function": "asym_trap_filter",
@@ -55,16 +61,24 @@
       "conv_tmin ,tp_start, conv_min, conv_max": {
         "function": "min_max",
         "module": "pygama.dsp.processors",
-        "args": ["wf_atrap","conv_tmin" ,"tp_start", "conv_min", "conv_max"],
+        "args": ["wf_t0_filter","conv_tmin" ,"tp_start", "conv_min", "conv_max"],
         "unit": ["ns","ns","ADC", "ADC"]
       },
 
-    "tp_0_est": {
+    "tp_0_atrap": {
       "function": "time_point_thresh",
       "module": "pygama.dsp.processors",
-      "args": [ "wf_atrap", "bl_std", "tp_start", 0,"tp_0_est" ],
+      "args": [ "wf_atrap", "bl_std", "tp_start", 0,"tp_0_atrap" ],
       "unit": "ns"
       },
+
+
+        "tp_0_est": {
+          "function": "time_point_thresh",
+           "module": "pygama.dsp.processors",
+           "args": [ "wf_t0_filter", "bl_std", "tp_start",0, "tp_0_est(unit=ns)" ],
+           "unit": "ns"
+          },
 
     "wf_trap": {
       "function": "trap_norm",

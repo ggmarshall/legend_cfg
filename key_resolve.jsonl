@@ -1,1 +1,2 @@
 {"valid_from":"20220628T221955Z","select":"cal","apply":["L200-p01-r%-T%-all-config.json","L200-p01-r%-T%-cal-config.json"]}
+{"valid_from":"20220628T221955Z","select":"phy","apply":["L200-p01-r%-T%-all-config.json"]}
