@@ -3,7 +3,7 @@
     "tp_min", "tp_max", "wf_min", "wf_max", "bl_mean","bl_std", "bl_slope","bl_intercept", "pz_slope","pz_std", "pz_mean",
     "trapTmax", "tp_0_est", "tp_0_atrap","tp_10","tp_20","tp_50","tp_80","tp_90",
     "tp_99", "tp_100", "tp_01", "tp_95", "A_max", "QDrift", "dt_eff", "tp_aoe_max", "tp_aoe_samp",
-    "trapEmax", "trapEftp", "cuspEmax","zacEmax",  "zacEftp", "cuspEftp"
+    "trapEmax", "cuspEmax","zacEmax",  "zacEftp", "cuspEftp"
   ],
   "processors":{
 
@@ -39,7 +39,7 @@
     "pz_mean , pz_std, pz_slope, pz_intercept":{
       "function": "linear_slope_fit",
       "module": "pygama.dsp.processors",
-      "args" : ["wf_pz[1500:]", "pz_mean","pz_std", "pz_slope","pz_intercept"],
+      "args" : ["wf_pz[len(wf_pz)-750:]", "pz_mean","pz_std", "pz_slope","pz_intercept"],
       "unit": ["ADC","ADC","ADC","ADC"]
       },
 
@@ -73,12 +73,12 @@
       },
 
 
-        "tp_0_est": {
-          "function": "time_point_thresh",
-           "module": "pygama.dsp.processors",
-           "args": [ "wf_t0_filter", "bl_std", "tp_start",0, "tp_0_est(unit=ns)" ],
-           "unit": "ns"
-          },
+    "tp_0_est": {
+      "function": "time_point_thresh",
+        "module": "pygama.dsp.processors",
+        "args": [ "wf_t0_filter", "(bl_mean/8) +bl_std", "tp_start",0, "tp_0_est(unit=ns)" ],
+        "unit": "ns"
+      },
 
     "wf_trap": {
       "function": "trap_norm",
@@ -115,7 +115,7 @@
     "trapEftp": {
       "function": "fixed_time_pickoff",
       "module": "pygama.dsp.processors",
-      "args": ["wf_etrap", "tp_0_est+db.etrap.rise+db.etrap.flat*db.etrap.sample", "trapEftp"],
+      "args": ["wf_etrap", "tp_0_est+((db.etrap.rise+db.etrap.flat*db.etrap.sample)/wf_blsub.period)", "trapEftp"],
       "unit": "ADC",
       "defaults": { "db.etrap.rise":"10*us",  "db.etrap.flat":"3*us", "db.etrap.sample":"0.8"}
     },
@@ -123,8 +123,8 @@
     "wf_cusp": {
       "function": "cusp_filter",
       "module": "pygama.dsp.processors",
-      "args": [ "wf_blsub", "wf_cusp(101, 'f')" ],
-      "init_args" : ["len(wf_blsub)-100", "db.cusp.sigma/wf_blsub.period", "db.cusp.flat/wf_blsub.period", "db.pz.tau"],
+      "args": [ "wf_blsub", "wf_cusp(2001, 'f')" ],
+      "init_args" : ["len(wf_blsub)-2000", "db.cusp.sigma/wf_blsub.period", "db.cusp.flat/wf_blsub.period", "db.pz.tau"],
       "defaults":{"db.cusp.sigma":"20*us", "db.cusp.flat":"3*us", "db.pz.tau":"27460.5"},
       "unit": "ADC"
     },
@@ -148,8 +148,8 @@
     "wf_zac": {
       "function": "zac_filter",
       "module": "pygama.dsp.processors",
-      "args": [ "wf_blsub", "wf_zac(101, 'f')" ],
-      "init_args" : ["len(wf_blsub)-100", "db.zac.sigma/wf_blsub.period", "db.zac.flat/wf_blsub.period", "db.pz.tau"],
+      "args": [ "wf_blsub", "wf_zac(2001, 'f')" ],
+      "init_args" : ["len(wf_blsub)-2000", "db.zac.sigma/wf_blsub.period", "db.zac.flat/wf_blsub.period", "db.pz.tau"],
       "defaults":{"db.zac.sigma":"20*us", "db.zac.flat":"3*us", "db.pz.tau":"27460.5"},
       "unit": "ADC"
     },
@@ -246,7 +246,7 @@
   "QDrift": {
     "function": "multiply",
     "module": "numpy",
-    "args": ["trapQftp", "(4*us)/waveform.period", "QDrift"],
+    "args": ["trapQftp", "4000", "QDrift"],
     "unit": "ADC"
  },
 

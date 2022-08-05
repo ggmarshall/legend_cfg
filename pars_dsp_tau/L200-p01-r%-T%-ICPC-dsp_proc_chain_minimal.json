@@ -18,7 +18,7 @@
 	"bl_mean , bl_std, bl_slope, bl_intercept":{
             "function": "linear_slope_fit",
             "module": "pygama.dsp.processors",
-            "args" : ["wf_blsub[0: 1000]", "bl_mean","bl_std", "bl_slope","bl_intercept"],
+            "args" : ["wf_blsub[0: 750]", "bl_mean","bl_std", "bl_slope","bl_intercept"],
             "prereqs": ["wf_blsub"],
             "unit": ["ADC","ADC","ADC","ADC"]
           },
@@ -27,7 +27,7 @@
           "wf_logged":{
             "function": "log_check",
             "module": "pygama.dsp.processors",
-            "args": ["wf_blsub[len(wf_blsub)-1000:]", "wf_logged"],
+            "args": ["wf_blsub[len(wf_blsub)-750:]", "wf_logged"],
             "prereqs": ["wf_blsub"],
             "unit": "ADC"
          },
