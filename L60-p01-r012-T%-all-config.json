@@ -1,0 +1,126 @@
+{   
+    "hardware_configuration":{
+            "channel_map":{
+                "ch002": {
+                    "det_id": "V08682B",
+                    "hardware_status": "Fully_biased",
+                    "software_status": "On"
+                },
+                "ch003": {
+                    "det_id": "V08682A",
+                    "hardware_status": "Fully_biased",
+                    "software_status": "On"
+                },
+                "ch005": {
+                    "det_id": "V09374A",
+                    "hardware_status": "Fully_biased",
+                    "software_status": "On"
+                },
+                "ch006": {
+                    "det_id": "V09724A",
+                    "hardware_status": "Fully_biased",
+                    "software_status": "On"
+                },
+                "ch008": {
+                    "det_id": "V09372A",
+                    "hardware_status": "Fully_biased",
+                    "software_status": "On"
+                },
+                "ch009": {
+                    "det_id": "V01389A",
+                    "hardware_status": "Fully_biased",
+                    "software_status": "Off"
+                },
+                "ch010": {
+                    "det_id": "V01406A",
+                    "hardware_status": "Fully_biased",
+                    "software_status": "On"
+                },
+                "ch011": {
+                    "det_id": "V05268A",
+                    "hardware_status": "Fully_biased",
+                    "software_status": "On"
+                },
+                "ch012": {
+                    "det_id": "V05612B",
+                    "hardware_status": "Fully_biased",
+                    "software_status": "On"
+                },
+                "ch013": {
+                    "det_id": "V07298B",
+                    "hardware_status": "Fully_biased",
+                    "software_status": "On"
+                },
+                "ch014": {
+                    "det_id": "V07646A",
+                    "hardware_status": "Fully_biased",
+                    "software_status": "On"
+                },
+                "ch021": {
+                    "det_id": "V02160A",
+                    "hardware_status": "Fully_biased",
+                    "software_status": "On"
+                },
+                "ch022": {
+                    "det_id": "V02162B",
+                    "hardware_status": "Fully_biased",
+                    "software_status": "On"
+                },
+                "ch023": {
+                    "det_id": "V04545A",
+                    "hardware_status": "Fully_biased",
+                    "software_status": "On"
+                },
+                "ch024": {
+                    "det_id": "V05266A",
+                    "hardware_status": "Fully_biased",
+                    "software_status": "On"
+                },
+                "ch025": {
+                    "det_id": "V05268B",
+                    "hardware_status": "Fully_biased",
+                    "software_status": "On"
+                },
+                "ch026": {
+                    "det_id": "V05612A",
+                    "hardware_status": "Fully_biased",
+                    "software_status": "On"
+                },
+                "ch027": {
+                    "det_id": "V07302B",
+                    "hardware_status": "Fully_biased",
+                    "software_status": "Off"
+                },
+                "ch035": {
+                    "det_id": "V02160B",
+                    "hardware_status": "Fully_biased",
+                    "software_status": "On"
+                },
+                "ch036": {
+                    "det_id": "V02166B",
+                    "hardware_status": "Fully_biased",
+                    "software_status": "On"
+                },
+                "ch037": {
+                    "det_id": "V04199A",
+                    "hardware_status": "Fully_biased",
+                    "software_status": "On"
+                },
+                "ch038": {
+                    "det_id": "V05261B",
+                    "hardware_status": "Fully_biased",
+                    "software_status": "On"
+                },
+                "ch039": {
+                    "det_id": "V05267B",
+                    "hardware_status": "Fully_biased",
+                    "software_status": "On"
+                },
+                "ch040": {
+                    "det_id": "V07647B",
+                    "hardware_status": "Fully_biased",
+                    "software_status": "On"
+                }
+            }
+    }
+}

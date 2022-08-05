@@ -1,2 +1,6 @@
-{"valid_from":"20220628T221955Z","select":"cal","apply":["L200-p01-r%-T%-all-config.json","L200-p01-r%-T%-cal-config.json"]}
-{"valid_from":"20220628T221955Z","select":"phy","apply":["L200-p01-r%-T%-all-config.json"]}
+{"valid_from":"20220628T221955Z","select":"cal","apply":["L60-p01-r%-T%-all-config.json","L60-p01-r%-T%-cal-config.json", "L60-p01-r006-T%-cal-config.json"]}
+{"valid_from":"20220628T221955Z","select":"phy","apply":["L60-p01-r%-T%-all-config.json", "L60-p01-r006-T%-phy-config.json"]}
+{"valid_from": "20220712T153503Z","select":"cal","apply":["L60-p01-r%-T%-all-config.json","L60-p01-r%-T%-cal-config.json", "L60-p01-r012-T%-all-config.json"]}
+{"valid_from": "20220712T153503Z","select":"phy","apply":["L60-p01-r%-T%-all-config.json", "L60-p01-r012-T%-all-config.json"]}
+{"valid_from": "20220716T085231Z","select":"cal","apply":["L60-p01-r%-T%-all-config.json","L60-p01-r%-T%-cal-config.json", "L60-p01-r014-T%-all-config.json"]}
+{"valid_from": "20220716T085231Z","select":"phy","apply":["L60-p01-r%-T%-all-config.json", "L60-p01-r014-T%-all-config.json"]}
