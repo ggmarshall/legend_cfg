@@ -2,16 +2,7 @@
     "hardware_configuration":{
             "detector_properties":"path/to/file",
             "channel_map":{
-                "001":{
-                    "det_id":"V04545A", 
-                    "hardware_status":"Fully_biased", 
-                    "software_status":"On"
-                },
-                "002":{
-                    "det_id":"V04545B", 
-                    "hardware_status":"Fully_biased", 
-                    "software_status":"On"
-                }
+                
             }        
     },
 

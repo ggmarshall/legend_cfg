@@ -29,12 +29,12 @@
                 "ch009": {
                     "det_id": "V01240A",
                     "hardware_status": "Fully_biased",
-                    "software_status": "On"
+                    "software_status": "Off"
                 },
                 "ch010": {
                     "det_id": "V01389A",
                     "hardware_status": "Fully_biased",
-                    "software_status": "On"
+                    "software_status": "Off"
                 },
                 "ch011": {
                     "det_id": "V01406A",
@@ -49,7 +49,7 @@
                 "ch013": {
                     "det_id": "V05268A",
                     "hardware_status": "Fully_biased",
-                    "software_status": "On"
+                    "software_status": "Off"
                 },
                 "ch014": {
                     "det_id": "V05612B",
@@ -99,7 +99,7 @@
                 "ch029": {
                     "det_id": "V07302B",
                     "hardware_status": "Fully_biased",
-                    "software_status": "Off"
+                    "software_status": "On"
                 },
                 "ch037": {
                     "det_id": "V02160B",
@@ -124,7 +124,7 @@
                 "ch041": {
                     "det_id": "V05266B",
                     "hardware_status": "Fully_biased",
-                    "software_status": "On"
+                    "software_status": "Off"
                 },
                 "ch042": {
                     "det_id": "V05267B",
