@@ -123,8 +123,8 @@
     "wf_cusp": {
       "function": "cusp_filter",
       "module": "pygama.dsp.processors",
-      "args": [ "wf_blsub", "wf_cusp(2001, 'f')" ],
-      "init_args" : ["len(wf_blsub)-2000", "db.cusp.sigma/wf_blsub.period", "db.cusp.flat/wf_blsub.period", "db.pz.tau"],
+      "args": [ "wf_blsub[:len(wf_blsub)-2100]", "wf_cusp(201, 'f')" ],
+      "init_args" : ["len(wf_blsub)-2300", "db.cusp.sigma/wf_blsub.period", "db.cusp.flat/wf_blsub.period", "db.pz.tau"],
       "defaults":{"db.cusp.sigma":"20*us", "db.cusp.flat":"3*us", "db.pz.tau":"27460.5"},
       "unit": "ADC"
     },
@@ -148,8 +148,8 @@
     "wf_zac": {
       "function": "zac_filter",
       "module": "pygama.dsp.processors",
-      "args": [ "wf_blsub", "wf_zac(2001, 'f')" ],
-      "init_args" : ["len(wf_blsub)-2000", "db.zac.sigma/wf_blsub.period", "db.zac.flat/wf_blsub.period", "db.pz.tau"],
+      "args": [ "wf_blsub[:len(wf_blsub)-2100]", "wf_zac(201, 'f')" ],
+      "init_args" : ["len(wf_blsub)-2300", "db.zac.sigma/wf_blsub.period", "db.zac.flat/wf_blsub.period", "db.pz.tau"],
       "defaults":{"db.zac.sigma":"20*us", "db.zac.flat":"3*us", "db.pz.tau":"27460.5"},
       "unit": "ADC"
     },
